@@ -26,12 +26,5 @@ int main()
         }
     }
     printf("%d %d",k,x);
-
-
-
-
-
-
-
     return 0;
 }

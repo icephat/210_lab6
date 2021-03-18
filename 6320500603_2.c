@@ -12,7 +12,7 @@ int main()
         a[i]=first%10;
         first/=10;
         b[i]=rd%10;
-        rd-=10;
+        rd/=10;
     }
     for(i=n-1;i>=0;i--)
     {

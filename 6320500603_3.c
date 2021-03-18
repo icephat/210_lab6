@@ -1,26 +1,41 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,max=0,min[2],s,l=0,m=0;
-    scanf("%d",&n);
-    int a[n][2],b[n],k,x[n];
+    int i,k,n,g,z,c,max,m=0;
+    scanf ("%d %d",&n,&g);
+    char a;
+    int x[n],y[n];
 
-    if(n>1&&n<1001)
+    for (i=0; i<n; i++)
     {
-        for(i=0;i<n;i++)
-        {
-            b[i]=i+1;
-            for(j=0; j<2; j++)
-            {
-                scanf("%d",&a[i][j]);
-            }
-        }
+        x[i] = 0;
+        y[i] = 0;
     }
+    for (i=0; i<g; i++)
+    {
+        scanf (" %c %d %d",&a,&z,&c);
+        if (a == 'U')
+        {
+            x[z-1] = c;
+        }
+        else if (a == 'P')
+        {
+            max = x[z-1];
+            for (k=z; k<c; k++)
+            {
+                if (max < x[k])
+                {
+                    max = x[k];
+                }
+            }
+            y[m] = max;
+            m++;
+        }
 
-
-
-
-
-
+    }
+    for (i=0; i<m; i++)
+    {
+        printf ("%d\n",y[i]);
+    }
     return 0;
 }

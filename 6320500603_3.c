@@ -15,20 +15,6 @@ int main()
                 scanf("%d",&a[i][j]);
             }
         }
-         for(i=0; i<n; i++)
-        {
-            for(j=0; j<2; j++)
-            {
-                if(a[i][j]>0&&a[i][j]<=n)
-                {
-                    l=1;
-                }
-                else
-                {
-                    m=1;
-                }
-            }
-        }
     }
 
 
